@@ -1,0 +1,84 @@
+.note-container {
+  width: 31%;
+  display: flex;
+  flex-direction: row;
+  padding: 8px 18px;
+  border-radius: 6px;
+  margin: 12px 10px;
+  min-height: 200px;
+}
+.notes {
+  width: 95%;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 8px;
+}
+
+.notes h3 {
+  padding: 6px;
+  font-size: 1em;
+  margin: 0.2em 0.5em;
+  border: none;
+  font-weight: bolder;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgb(11, 11, 61);
+}
+
+.notes h5 {
+  padding: 0.4em;
+  font-size: 1em;
+  margin: 0.2em 0.5em;
+  border: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: black;
+  resize: none;
+}
+
+.pad {
+  width: 0;
+  padding: 0.7em;
+  cursor: pointer;
+  position: relative;
+}
+@media (max-width: 998px) {
+  .note-container {
+    width: 28%;
+
+    padding: 6px 16px;
+    border-radius: 5px;
+    margin: 10px 8px;
+    min-height: 180px;
+  }
+  .notes {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .note-container {
+    width: 30%;
+
+    padding: 5px 14px;
+    border-radius: 4px;
+    margin: 9px 7px;
+    min-height: 160px;
+  }
+  .notes {
+    font-size: 12px;
+  }
+}
+@media (max-width: 568px) {
+  .note-container {
+    width: 70%;
+
+    padding: 4px 12px;
+    border-radius: 4px;
+    margin: 8px 6px;
+    min-height: 150px;
+  }
+  .notes {
+    font-size: 10px;
+  }
+}
